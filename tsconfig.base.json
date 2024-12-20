@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@just-a-system/api-interfaces": ["libs/api-interfaces/src/index.ts"],
+      "@just-a-system/mongo": ["libs/infra/mongo/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
