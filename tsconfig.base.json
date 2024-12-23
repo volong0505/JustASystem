@@ -16,6 +16,10 @@
     "baseUrl": ".",
     "paths": {
       "@just-a-system/api-interfaces": ["libs/api-interfaces/src/index.ts"],
+      "@just-a-system/client-shell": ["libs/client/shell/feature/src/index.ts"],
+      "@just-a-system/client-shell-ui-layout": [
+        "libs/client/shell/ui/layout/src/index.ts"
+      ],
       "@just-a-system/mongo": ["libs/infra/mongo/src/index.ts"]
     }
   },
