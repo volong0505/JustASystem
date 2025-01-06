@@ -11,7 +11,7 @@
   },
   "include": [
     "src/**/*.ts"
-  ],
+, "../../libs/server/_share/interceptors/src/lib/logger.middleware.ts"  ],
   "exclude": [
     "jest.config.ts",
     "src/**/*.spec.ts",

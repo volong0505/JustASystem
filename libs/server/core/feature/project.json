@@ -1,0 +1,9 @@
+{
+  "name": "server-feature-core",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/server/core/feature/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project server-feature-core --web",
+  "targets": {}
+}
