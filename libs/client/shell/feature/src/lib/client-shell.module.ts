@@ -1,11 +1,15 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { provideRouter } from '@angular/router';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { NgModule } from '@angular/core';
+import { provideRouter, RouterModule } from '@angular/router';
+import { ApiInterceptor } from '@just-a-system/client-shared-interceptors';
 import { clientShellRoutes } from './client-shell.router';
-
 @NgModule({
   imports: [
-    CommonModule,
+    CommonModule
+  ],
+  exports: [
+    RouterModule
   ],
   providers: [
     provideRouter(

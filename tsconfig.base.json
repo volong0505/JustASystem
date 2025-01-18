@@ -16,11 +16,55 @@
     "baseUrl": ".",
     "paths": {
       "@just-a-system/api-interfaces": ["libs/api-interfaces/src/index.ts"],
+      "@just-a-system/client-auth-data-access": [
+        "libs/client/auth/data-access/src/index.ts"
+      ],
+      "@just-a-system/client-auth-feature": [
+        "libs/client/auth/feature/src/index.ts"
+      ],
+      "@just-a-system/client-auth-ui-login": [
+        "libs/client/auth/ui/login/src/index.ts"
+      ],
+      "@just-a-system/client-shared-interceptors": [
+        "libs/client/_shared/interceptors/src/index.ts"
+      ],
+      "@just-a-system/client-shared-providers": [
+        "libs/client/_shared/providers/src/index.ts"
+      ],
       "@just-a-system/client-shell": ["libs/client/shell/feature/src/index.ts"],
       "@just-a-system/client-shell-ui-layout": [
         "libs/client/shell/ui/layout/src/index.ts"
       ],
-      "@just-a-system/mongo": ["libs/infra/mongo/src/index.ts"]
+      "@just-a-system/client-shell-ui-nav-bar": [
+        "libs/client/shell/ui/nav-bar/src/index.ts"
+      ],
+      "@just-a-system/client-util-types": [
+        "libs/client/_shared/utils/util-types/src/index.ts"
+      ],
+      "@just-a-system/mongo": ["libs/infra/mongo/src/index.ts"],
+      "@just-a-system/server-data-access-auth": [
+        "libs/server/auth/data-access/src/index.ts"
+      ],
+      "@just-a-system/server-data-access-users": [
+        "libs/server/users/data-access/src/index.ts"
+      ],
+      "@just-a-system/server-feature-auth": [
+        "libs/server/auth/feature/src/index.ts"
+      ],
+      "@just-a-system/server-feature-core": [
+        "libs/server/core/feature/src/index.ts"
+      ],
+      "@just-a-system/server-feature-users": [
+        "libs/server/users/feature/src/index.ts"
+      ],
+      "@just-a-system/server-middlewares": [
+        "libs/server/_common/middlewares/src/index.ts"
+      ],
+      "@just-a-system/util-common": ["libs/_shared/util-common/src/index.ts"],
+      "@just-a-system/util-constants": [
+        "libs/_shared/util-constants/src/index.ts"
+      ],
+      "@just-a-system/util-types": ["libs/_shared/util-types/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
