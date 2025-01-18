@@ -4,7 +4,6 @@ import { LoggerMiddleware } from '@just-a-system/server-middlewares';
 import { ServerFeatureUsersModule } from '@just-a-system/server-feature-users';
 import { ServerFeatureAuthModule } from '@just-a-system/server-feature-auth';
 import { ConfigModule, ConfigService } from '@nestjs/config';
-import { databaseConfig } from '@just-a-system/util-common';
 
 @Module({
   imports: [

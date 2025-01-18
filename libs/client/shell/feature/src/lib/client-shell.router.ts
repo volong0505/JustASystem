@@ -1,14 +1,13 @@
 import { Route } from '@angular/router';
-import { LayoutComponent } from '@just-a-system/client-shell-ui-layout'
-import { LoginComponent } from '@just-a-system/client-auth-ui-login';
+import { AuthComponent } from '@just-a-system/client-auth-feature';
 
 export const clientShellRoutes: Route[] = [
     {
         path: '',
-        component: LayoutComponent
+        loadComponent: () => import('@just-a-system/client-shell-ui-layout').then(c => c.LayoutComponent)
     },
     {
         path: 'login',
-        component: LoginComponent
+        component: AuthComponent
     }
 ]

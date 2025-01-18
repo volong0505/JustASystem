@@ -12,11 +12,7 @@ export class UsersQueryImpl implements UsersQuery {
 
     async findOne(username: string): Promise<User> {
         const user = await this.model.findOne({username: username});
-
-        console.log(user)
-
         return user as User
-
     }
 
     async findAll(): Promise<User[]> {

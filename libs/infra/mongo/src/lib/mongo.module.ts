@@ -1,8 +1,7 @@
-import { DynamicModule, Module } from '@nestjs/common';
+import { Module } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
 import { mongoSchemas } from '.';
 import { ConfigModule, ConfigService } from '@nestjs/config';
-import { databaseProviders } from '@just-a-system/util-common';
 import { ENV_MONGO_URI } from '@just-a-system/util-constants';
 @Module({
   imports: [
@@ -17,11 +16,5 @@ import { ENV_MONGO_URI } from '@just-a-system/util-constants';
       ...mongoSchemas
     ])
   ],
-  // providers: [
-  //   ...databaseProviders
-  // ],
-  // exports: [
-  //   ...databaseProviders
-  // ]
 })
 export class MongoModule {}

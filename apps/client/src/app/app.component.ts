@@ -7,13 +7,6 @@ import { ClientShellModule } from '@just-a-system/client-shell';
   imports: [
     ClientShellModule
   ],
-  providers: [
-    {
-      provide: HTTP_INTERCEPTORS,
-      useValue: new ApiInterceptor(''),
-      multi: true
-    }
-  ],
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',

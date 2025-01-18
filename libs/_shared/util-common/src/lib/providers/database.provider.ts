@@ -1,4 +1,3 @@
-import { ConfigService } from '@nestjs/config';
 import * as mongoose from 'mongoose';
 import { ENV_MONGO_URI } from '@just-a-system/util-constants';
 

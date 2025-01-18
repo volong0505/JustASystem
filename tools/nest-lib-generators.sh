@@ -2,7 +2,9 @@ npx nx g @nx/nest:lib --directory=libs/infra/mongo --dryRun
 npx nx g @nx/nest:lib --directory=libs/api-interfaces --dryRun
 npx nx g @nx/nest:lib --directory=libs/_shared/util-constants --dryRun
 npx nx g @nx/nest:lib --directory=libs/_shared/util-common --dryRun
+npx nx g @nx/nest:lib --directory=libs/_shared/util-types --dryRun
 
+npx nx g @nx/nest:lib --directory=libs/client/_shared/utils/util-types --name=client-util-types --dryRun
 
 npx nx g @nx/nest:lib --directory=libs/server/core/feature --name=server-feature-core --controller=false --service=false --dryRun
 npx nx g @nx/nest:lib --directory=libs/server/_common/middlewares --name=server-middlewares --controller=false --service=false --dryRun

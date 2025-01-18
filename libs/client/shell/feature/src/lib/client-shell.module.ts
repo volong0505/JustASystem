@@ -1,9 +1,9 @@
 import { CommonModule } from '@angular/common';
-import { HTTP_INTERCEPTORS, provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { provideRouter, RouterModule } from '@angular/router';
+import { ApiInterceptor } from '@just-a-system/client-shared-interceptors';
 import { clientShellRoutes } from './client-shell.router';
-
 @NgModule({
   imports: [
     CommonModule
