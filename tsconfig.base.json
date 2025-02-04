@@ -25,6 +25,16 @@
       "@just-a-system/client-auth-ui-login": [
         "libs/client/auth/ui/login/src/index.ts"
       ],
+      "@just-a-system/client-books-data-access": [
+        "libs/client/books/data-access/src/index.ts"
+      ],
+      "@just-a-system/client-books-feature": [
+        "libs/client/books/feature/src/index.ts"
+      ],
+      "@just-a-system/client-books-ui": ["libs/client/books/ui/src/index.ts"],
+      "@just-a-system/client-shared-data-access-store": [
+        "libs/client/_shared/data-access/store/src/index.ts"
+      ],
       "@just-a-system/client-shared-interceptors": [
         "libs/client/_shared/interceptors/src/index.ts"
       ],
@@ -34,6 +44,9 @@
       "@just-a-system/client-shell": ["libs/client/shell/feature/src/index.ts"],
       "@just-a-system/client-shell-ui-layout": [
         "libs/client/shell/ui/layout/src/index.ts"
+      ],
+      "@just-a-system/client-shell-ui-main-view": [
+        "libs/client/shell/ui/main-view/src/index.ts"
       ],
       "@just-a-system/client-shell-ui-nav-bar": [
         "libs/client/shell/ui/nav-bar/src/index.ts"

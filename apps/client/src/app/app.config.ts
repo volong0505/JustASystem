@@ -9,6 +9,7 @@ import { provideStore } from '@ngrx/store';
 import { appRoutes } from './app.routes';
 import { ApiInterceptor } from '@just-a-system/client-shared-interceptors';
 import { environment } from '../environments/environment';
+import { provideNzIcons } from 'ng-zorro-antd/icon';
 export const appConfig: ApplicationConfig = {
   providers: [
     // importProvidersFrom(Htt),
@@ -22,6 +23,7 @@ export const appConfig: ApplicationConfig = {
     provideRouterStore(),
     provideEffects(),
 
+    // Setup Ng-Zorro
 
     // Setup Application
     provideAuthStore(),
