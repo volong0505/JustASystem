@@ -1,15 +1,11 @@
-<div class="logo"></div>
+
 <ul nz-menu nzTheme="dark" nzMode="inline">
-  <li nz-menu-item>
-      <nz-icon nzType="file" />
-      <span>File</span>
+  @for (item of navItemsStore.navItems(); track item.label) {
+    <li nz-menu-item *ngIf="!item.hidden"
+      [routerLink]="item.path"
+    >
+      <nz-icon [nzType]="item.icon" />
+      <span>{{item.label}}</span>
     </li>
-  <li nz-menu-item>
-      <nz-icon nzType="file" />
-      <span>File</span>
-    </li>
-  <li nz-menu-item>
-    <nz-icon nzType="file" />
-    <span>File</span>
-  </li>
+  }
 </ul>
